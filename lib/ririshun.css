@@ -31,6 +31,9 @@ body{
 	font-family: SimSun;
 	font-size: 35px;
 }
+.header-nav li a{
+	color: white;
+}
 /* 登录 */
 .denglu{
 	position: absolute;

@@ -61,8 +61,14 @@
 .telephone{
 	font-weight: 800;
 }
+.telephone i{
+	font-size: 20px;
+	color: #fff;
+	margin-right: 6px;
+}
 .telephone b{
 	font-size: 20px;
+	color: #fff;
 }
 /* 登录用户 */
 .denglu a{
@@ -76,7 +82,9 @@
 	position: relative;
 	display: block;	
 	top: 540px;
+	padding-left: 130px;
+	padding-right: 150px;
 }
-.fuwu li{
-	float: left;
+.row h1{
+
 }

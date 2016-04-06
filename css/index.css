@@ -8,6 +8,7 @@
 	left: 0;
 	top: 0;
 	background: #CC0000;
+	z-index: 100;
 }
 /* logo */
 .logo{
@@ -51,7 +52,7 @@
 
 }
 /* 登录 */
-.denglu{
+.login{
 	position: absolute;
 	display: block;
 	left: 1000px;
@@ -71,20 +72,45 @@
 	color: #fff;
 }
 /* 登录用户 */
-.denglu a{
+.login a{
 	color: #F5ACBB; 
 	font-size: 12px;
 }
-.denglu span{
+.login span{
 	color: #F5ACBB;
 }
-.fuwu{
-	position: relative;
-	display: block;	
-	top: 540px;
-	padding-left: 130px;
-	padding-right: 150px;
+/* 轮播 */
+.carousel{
+	margin-top: 100px;
+	width: 100%;
+	height: 450px;
+	background-color: #000;
 }
-.row h1{
-
+/* 服务 */
+.service{
+	position: relative;
+	width: 1000px;
+	display: block;	 
+	padding: 45px 0px;
+	margin: 0px auto; 
+}
+/* 服务父层 */
+.service .row .col-md-3 {
+	position: relative;
+}
+/* 服务标题 */
+.service .row .col-md-3 h2{
+	position: absolute;
+	margin: 0px;
+	top: 26px;
+	left: 110px;
+	font-size: 22px;
+	font-weight: bold; 
+}
+/* 服务描述 */
+.service .row .col-md-3 span{
+	position: absolute;
+	top: 60px;
+	left: 110px;
+	font-size: 12px;
 }

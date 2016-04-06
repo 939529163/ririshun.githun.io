@@ -8,6 +8,7 @@
 	left: 0;
 	top: 0;
 	background: #CC0000;
+	z-index: 100;
 }
 /* logo */
 .logo{
@@ -78,13 +79,38 @@
 .denglu span{
 	color: #F5ACBB;
 }
+/* 轮播 */
+.carousel{
+	margin-top: 100px;
+	width: 100%;
+	height: 450px;
+	background-color: #000;
+}
+/* 服务 */
 .fuwu{
 	position: relative;
-	display: block;	
-	top: 540px;
-	padding-left: 130px;
-	padding-right: 150px;
+	width: 1000px;
+	display: block;	 
+	padding: 45px 0px;
+	margin: 0px auto; 
 }
-.row h1{
-
+/* 服务父层 */
+.fuwu .row .col-md-3 {
+	position: relative;
+}
+/* 服务标题 */
+.fuwu .row .col-md-3 h2{
+	position: absolute;
+	margin: 0px;
+	top: 26px;
+	left: 110px;
+	font-size: 22px;
+	font-weight: bold; 
+}
+/* 服务描述 */
+.fuwu .row .col-md-3 span{
+	position: absolute;
+	top: 60px;
+	left: 110px;
+	font-size: 12px;
 }

@@ -1,0 +1,82 @@
+
+/* 头部部分 */
+.header{
+	position: fixed;
+	padding: 15px;
+	width: 100%;
+	height: 100px;
+	left: 0;
+	top: 0;
+	background: #CC0000;
+}
+/* logo */
+.logo{
+	margin: 0px;
+	padding: 0 190px 0 150px; 
+}
+/* 导航列表 */
+.header-nav{
+	position: absolute;
+	left: 400px;
+	top: 35px;
+}
+/* 导航列表项 */
+.header-nav li{
+	text-align: center;
+	position: relative;
+	float: left;
+	display: inline;
+	width: 65px; 
+	left: 0px;
+	margin-right: 40px;
+	font-family: SimSun;
+	font-size: 22px;
+}
+/* 当前页面 */
+.header-nav li.active{
+	border-bottom: 1px solid #fff;
+}
+/* 页面列表项 */
+.header-nav li a{
+	color: #F5ACBB;
+}
+/* 鼠标停留样式 */
+.header-nav li a:hover{
+	text-decoration:none;
+	color: #fff;
+}
+/* 当前列表颜色 */
+.header-nav li.active a{
+	color: #fff;
+
+}
+/* 登录 */
+.denglu{
+	position: absolute;
+	display: block;
+	left: 1000px;
+	top: 15px;
+}
+/* 联系电话 */
+.telephone{
+	font-weight: 800;
+}
+.telephone b{
+	font-size: 20px;
+}
+/* 登录用户 */
+.denglu a{
+	color: #F5ACBB; 
+	font-size: 12px;
+}
+.denglu span{
+	color: #F5ACBB;
+}
+.fuwu{
+	position: relative;
+	display: block;	
+	top: 540px;
+}
+.fuwu li{
+	float: left;
+}

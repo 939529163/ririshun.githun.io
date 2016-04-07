@@ -329,3 +329,78 @@
 	left: 30px;
 	width: 430px;
 }
+/* 下单 */
+.order{
+	position: relative;
+}
+/* 下单标题*/
+.order h2{
+	color: #4F4F4F;
+	text-align: center;
+	font-weight: bold;
+	font-size: 35px;
+	padding: 0px;
+}
+/* 下单方式 */
+.order .order_way{
+	position: absolute;
+	left: 150px;
+	top: 80px;
+	width: 1000px;
+}
+/* 确定下单位置 */
+.order .order_way .row .col-md-6{
+	position: relative;
+	width: 50%;
+	height: 320px;
+}
+/* 链接背景 */
+.order .order_way .row .col-md-6 .background {
+	position: absolute;
+	bottom: 0px;
+	width: 485px;
+	height: 100px;
+	background-color: #606162;
+	opacity: 0.4;
+}
+/* 下单图片 */
+.order .order_way .row .col-md-6 img{
+	width: 100%;
+	height: 320px;
+}
+/* 下单方式 */
+.order .order_way .row .col-md-6 a.btn span{
+	position: absolute;
+	background: #C7003A;
+	left: 380px;
+	bottom: 27px;
+	padding: 15px 40px;
+	color: #F5ACBB;
+}
+/* 下单方式标题 */
+.order .order_way .row .col-md-6 .phone h3{
+ 	position: absolute;
+ 	left: 60px;
+ 	top: 240px;
+ 	color: #fff; 
+ 	margin: 0px;
+ 	font-size: 20px;
+}
+/* 下单电话图标 */
+.order .order_way .row .col-md-6 .phone i{
+	position: absolute;
+	left: 60px;
+	top: 265px;
+	color: #fff;
+	margin: 0px;
+	font-size: 20px;
+}
+/* 下单电话 */
+.order .order_way .row .col-md-6 .phone b{
+	position: absolute;
+	left: 90px;
+	top: 265px;
+	color: #fff;
+	margin: 0px;
+	font-size: 20px;
+}

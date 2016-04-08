@@ -81,10 +81,48 @@
 }
 /* 轮播 */
 .carousel{
-	margin-top: 100px;
+	margin-top: 0px;
 	width: 100%;
-	height: 450px;
+	height: 420px;
 	background-color: #000;
+}
+.carousel-indicators{
+	width: 400px;
+	left: 1400px;
+}
+.carousel-indicators li{
+	margin: 5px;
+}
+.carousel-indicators li.active{
+	margin: 5px;
+}
+.carousel-inner{
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	display: block;
+}
+.carousel-inner .item{
+	width: 100%;
+	height: 100%;
+}
+.carousel .carousel-inner .icon-carousel-5{
+	background: url('../img/banner1.jpg') no-repeat;
+	width: 100%;
+	height: 100%;
+	background-size: 100%;
+}
+.carousel .carousel-inner .icon-carousel-4{
+	background: url('../img/banner2.jpg') no-repeat;
+	width: 100%;
+	height: 100%;
+	background-size: 100%;
+}
+.carousel .carousel-inner .icon-carousel-3{
+	background: url('../img/banner3.jpg') no-repeat;
+	width: 100%;
+	height: 100%;
+	background-size: 100%;
 }
 /* 服务 */
 .service{

@@ -142,10 +142,12 @@
 	background-color: #575757;
 	padding: 5px;
 }
+/* 搜索表单 */
 .search .form-group{
 	position: relative;
 	margin-bottom: 60px;
 }
+/* 查询表单 */
 .search .form-control{
 	position: absolute;
 	height: 40px;
@@ -154,11 +156,13 @@
 	background-color: #fff;
 	border-radius: 0px;
 }
+/* 透明内容 */
 .search input[placeholder]{
 	position: absolute;
 	left: 2px;
 	color: #000;
 }
+/* 查询按钮*/
 .search .btn{
 	position: absolute;
 	left: 610px;

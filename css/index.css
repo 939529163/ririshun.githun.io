@@ -98,6 +98,29 @@
 .service .row .col-md-3 {
 	position: relative;
 }
+/* 服务样式 */
+.service .row .col-md-3 .icon{
+	background-repeat: no-repeat;
+	display: block;
+	width: 85px;
+	height: 90px; 
+}
+/* 品牌图片 */
+.service .row .col-md-3 .icon-brand{
+	background-image: url('../img/icon-brand.png');
+}
+/* 时效图片 */
+.service .row .col-md-3 .icon-aging{
+	background-image: url('../img/icon-aging.png');
+}
+/* 服务图片 */
+.service .row .col-md-3 .icon-service{
+	background-image: url('../img/icon-service.png');
+}
+/* 网络图片 */
+.service .row .col-md-3 .icon-inter{
+	background-image: url('../img/icon-inter.png');
+}
 /* 服务标题 */
 .service .row .col-md-3 h2{
 	position: absolute;
@@ -149,7 +172,7 @@
 	height: 420px;
 	padding: 0px;
 }
-/* 运输服务图片 */
+/* 运输服务 */
 .products .row .col-md-6 .transportation{
 	overflow: hidden;
 	width: 500px;
@@ -157,6 +180,7 @@
 	display: block;
 	position: relative;
 }
+/* 运输服务图片 */
 .products .row .col-md-6 .transportation img{
 	position: absolute;
 	top: 0px;
@@ -215,6 +239,7 @@
 	color: #fff;
 	font-size: 13px;
 }
+/* 售后服务 */
 .products .row .col-md-6 .col-md-6.col-sm-6 .after-sales{
 	position: relative;
 	display: block;
@@ -255,9 +280,6 @@
 	font-size: 12px;
 }
 /* 配送服务 */
-.products .row .col-md-6 .col-md-6.col-sm-6 .distribution{
-	position: relative;
-}
 .products .row .col-md-6 .col-md-6.col-sm-6 .distribution{
 	position: relative;
 	display: block;
@@ -322,6 +344,7 @@
 	top: 100px;
 	left: 30px;
 }
+/* 物流服务 */
 .products .row .col-md-6 .logistics {
 	position: relative;
 	display: block;

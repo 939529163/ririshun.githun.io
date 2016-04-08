@@ -83,8 +83,90 @@
 .carousel{
 	margin-top: 100px;
 	width: 100%;
-	height: 450px;
+	height: 420px;
 	background-color: #000;
+}
+/* 指示表 */
+.carousel-indicators{
+	width: 270px;
+	left: 1480px;
+}
+/* 指示表列表项 */
+.carousel-indicators li{
+	margin: 5px;
+}
+/* 当前指示标 */
+.carousel-indicators li.active{
+	margin: 5px;
+}
+/* 图片容器 */
+.carousel-inner{
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	display: block;
+}
+/* 图片所在页面 */
+.carousel-inner .item{
+	width: 100%;
+	height: 100%;
+}
+/* 图片5 */
+.carousel .carousel-inner .icon-carousel-5{
+	background: url('../img/banner1.jpg') no-repeat;
+	width: 100%;
+	height: 100%;
+	background-size: 100%;
+}
+/* 图片4 */
+.carousel .carousel-inner .icon-carousel-4{
+	background: url('../img/banner2.jpg') no-repeat;
+	width: 100%;
+	height: 100%;
+	background-size: 100%;
+}
+/* 图片3 */
+.carousel .carousel-inner .icon-carousel-3{
+	background: url('../img/banner3.jpg') no-repeat;
+	width: 100%;
+	height: 100%;
+	background-size: 100%;
+}
+/* 搜索 */
+.search{
+	position: absolute;
+	left: 310px;
+	bottom: 10px;
+	width: 705px;
+	height: 60px;
+	background-color: #575757;
+	padding: 5px;
+}
+.search .form-group{
+	position: relative;
+	margin-bottom: 60px;
+}
+.search .form-control{
+	position: absolute;
+	height: 40px;
+	top: 5px;
+	width: 610px;
+	background-color: #fff;
+	border-radius: 0px;
+}
+.search input[placeholder]{
+	position: absolute;
+	left: 2px;
+	color: #000;
+}
+.search .btn{
+	position: absolute;
+	left: 610px;
+	top: 5px;
+	height: 40px;
+	background-color: #C7003A;
+	color: #fff;
+	border-radius: 0px;
 }
 /* 服务 */
 .service{

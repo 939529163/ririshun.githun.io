@@ -671,6 +671,18 @@
 	padding-top: 20px;
 	color: #000;
 }
+/* 左箭头 */
+.partner .banner .prev{
+	position: absolute;
+	left: 15px;
+	top: 90px;
+}
+/* 右箭头 */
+.partner .banner .next{
+	position: absolute;
+	right: 15px;
+	top: 90px;
+}
 /* 底部位置 */
 .bottom{
 	position: relative;

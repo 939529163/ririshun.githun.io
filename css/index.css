@@ -620,6 +620,9 @@
 	font-size: 14px;
 	color:  #5A5A5A;
 }
+.partner .title a:hover{
+	color: #748575;
+}
 /* 合作伙伴轮播外层 */
 .partner .banner{
 	position: absolute;

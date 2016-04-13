@@ -598,18 +598,21 @@
 	height: 400px;
 	background: #fff;
 }
+/* 合作伙伴标题外层 */
 .partner .title{
 	position: absolute;
 	left: 150px;
 	width: 1000px;
 	border-bottom: 1px solid #E3E3E3;
 }
+/* 合作伙伴标题 */
 .partner .title h2{
 	position: relative;
 	color: #5A5A5A;
 	padding: 65px 0 30px 0;
 	margin: 0px;
 }
+/* 合作伙伴更多链接 */
 .partner .title a{
 	position: absolute;
 	margin-top: 22px;
@@ -617,6 +620,7 @@
 	font-size: 13px;
 	color:  #5A5A5A;
 }
+/* 合作伙伴轮播外层 */
 .partner .banner{
 	position: absolute;
 	left: 150px;
@@ -624,9 +628,11 @@
 	width: 1000px;
 	height: 250px;
 }
+/* 轮播列表样式 */
 .partner .banner ul{
 	list-style: none;
 }
+/* 轮播图片列表项外层 */
 .partner .banner .imgList{
 	position: relative;
 	width: 1000px;
@@ -637,21 +643,25 @@
 	padding: 0px;
 	margin: 0px;
 }
+/* 轮播图片列表项 */
 .partner .banner .imgList li{
 	width: 20%;
 	height: 180px;
 	float: left;
 	border-left: 1px solid #E3E3E3;
 }
+/* 轮播图片首项 */
 .partner .banner .imgList .li-item{
 	border: none;
 }
+/* 轮播图片 */
 .partner .banner .imgList img{
 	width: 70px;
 	height: 70px;
 	margin-top: 35px;
 	margin-left: 65px;
 }
+/* 轮播图片介绍 */
 .partner .banner ul li span{
 	text-align: center;
 	display: block;

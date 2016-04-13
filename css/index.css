@@ -645,6 +645,7 @@
 	border-color: #E3E3E3;
 	padding: 0px;
 	margin: 0px;
+	overflow: hidden;
 }
 /* 轮播图片列表项 */
 .partner .banner .imgList li{

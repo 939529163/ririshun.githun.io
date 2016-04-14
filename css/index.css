@@ -676,13 +676,15 @@
 .partner .banner .prev{
 	position: absolute;
 	left: 15px;
-	top: 90px;
+	top: 80px;
+	padding: 10px;
 }
 /* 右箭头 */
 .partner .banner .next{
 	position: absolute;
 	right: 15px;
-	top: 90px;
+	top: 80px;
+	padding: 10px;
 }
 /* 底部位置 */
 .bottom{

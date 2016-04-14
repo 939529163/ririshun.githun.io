@@ -1,19 +1,21 @@
 $(function () {
-	var $img_list = $('.imgList')
-	var $first_li = $img_list.find('li:first-child')
-	var li_width = $first_li.outerWidth()
-	var $prev = $('.prev')
-	var $next = $('.next')
-	var th 
-	var li_num = $img_list.find('li').length
+	var $img_list = $('.imgList')// 图片列表
+	var $first_li = $img_list.find('li:first-child')// 定义首项图片
+	var li_width = $first_li.outerWidth()//列表宽度
+	var $prev = $('.prev')//定义左箭头
+	var $next = $('.next')//定义右箭头
+	var th //定义一个变量
+	var li_num = $img_list.find('li').length//li
 
+	//左箭头添加事件
 	$prev.on('click',function(e){
-		e.preventDefault()
-		e.stopPropagation()
+		e.preventDefault()//阻止默认
+		e.stopPropagation()//阻止向父辈传递
 
-		var $last_li = $img_list.find('li:last-child')
-		var left = parseInt($img_list.css('left'))
+		var $last_li = $img_list.find('li:last-child')//定义循环内最后一项
+		var left = parseInt($img_list.css('left'))//定义往左
 
+		//阻止动画
 		if (left == 0) {
 			$img_list.prepend($last_li).css({
 				'left':-li_width + 'px'
@@ -28,15 +30,16 @@ $(function () {
 		}
 	})
 
+	//右箭头添加事件
 	$next.on('click',function(e){
-		e.preventDefault()
-		e.stopPropagation()
+		e.preventDefault()//
+		e.stopPropagation()//
 
-		var $first_li = $img_list.find('li:first-child')
-		var left = parseInt($img_list.css('left'))
+		var $first_li = $img_list.find('li:first-child')//
+		var left = parseInt($img_list.css('left'))//
 
 		if (left == -li_width){
-			$img_list.append(first_li).css({
+			$img_list.append($first_li).css({
 				'left': 0 + 'px'
 			}).stop(true,true).animate({left: -li_width + 'px'},500)
 		}
@@ -50,6 +53,7 @@ $(function () {
 
 	})
 
+	//触发定时器
 	function loop(){
 		th = setInterval(function(){
 			$next.click()

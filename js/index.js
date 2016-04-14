@@ -1,39 +1,64 @@
 $(function () {
-	var $imgList = $('.imgList')// 图片列表
-	
-	// 调用函数carousel
-	carousel($imgList,400)
-})
+	var $img_list = $('.imgList')
+	var $first_li = $img_list.find('li:first-child')
+	var li_width = $first_li.outerWidth()
+	var $prev = $('.prev')
+	var $next = $('.next')
+	var th 
+	var li_num = $img_list.find('li').length
 
+	$prev.on('click',function(e){
+		e.preventDefault()
+		e.stopPropagation()
 
-function carousel ($imgList, li_width) {
-	var num = 400// 位置初始值
-	var $first_li = $imgList.find('li:first-child').clone()// 克隆第一个li
-	var $last_li  = $imgList.find("li:last-child").clone()// 克隆第二个li
-	
-	//  将第一个克隆li插入到最后li后面
-	$imgList.append($first_li)
-	// 将最后一个li克隆插入到第一个li前
-	$imgList.prepend($last_li)
-	
-	// 将初始位置左移
-	$imgList.offset({
-		left: -num
+		var $last_li = $img_list.find('li:last-child')
+		var left = parseInt($img_list.css('left'))
+
+		if (left == 0) {
+			$img_list.prepend($last_li).css({
+				'left':-li_width + 'px'
+			}).stop(true,true).animate({ left: 0},500)
+		}
+		else {
+			$img_list.stop(true,false).animate({ left: 0},500,function(){
+				$img_list.prepend($last_li).css({
+					'left':-li_width + 'px'
+				})	
+			})
+		}
 	})
 
-	// 定时器
-	// 触发时间1s
-	 setInterval(function (){
-		if (num<2000) {
-			num = num + li_width// 位置改变量
+	$next.on('click',function(e){
+		e.preventDefault()
+		e.stopPropagation()
+
+		var $first_li = $img_list.find('li:first-child')
+		var left = parseInt($img_list.css('left'))
+
+		if (left == -li_width){
+			$img_list.append(first_li).css({
+				'left': 0 + 'px'
+			}).stop(true,true).animate({left: -li_width + 'px'},500)
 		}
 		else{
-			num = li_width
+			$img_list.stop(true,false).animate({left: -li_width + 'px'},500,function(){
+				$img_list.append($first_li).css({
+					'left': 0 + 'px'
+				})
+			})
 		}
 
-		// 位置向左移动
-		$imgList.offset({
-			left: -num
-		})
-	}, 1000)
-}
+	})
+
+	function loop(){
+		th = setInterval(function(){
+			$next.click()
+			console.log('aaa')
+		},3000)
+	}	
+
+	if (li_num>5) {
+		loop()
+	}
+	// body...
+})

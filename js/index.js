@@ -19,10 +19,10 @@ $(function () {
 		if (left == 0) {
 			$img_list.prepend($last_li).css({
 				'left':-li_width + 'px'
-			}).stop(true,true).animate({ left: 0},500)
+			}).stop(true,true).animate({ 'left': 0 + 'px'},500)
 		}
 		else {
-			$img_list.stop(true,false).animate({ left: 0},500,function(){
+			$img_list.stop(true,false).animate({ 'left': 0 +'px'},500,function(){
 				$img_list.prepend($last_li).css({
 					'left':-li_width + 'px'
 				})	
@@ -41,10 +41,10 @@ $(function () {
 		if (left == -li_width){
 			$img_list.append($first_li).css({
 				'left': 0 + 'px'
-			}).stop(true,true).animate({left: -li_width + 'px'},500)
+			}).stop(true,true).animate({'left': -li_width + 'px'},500)
 		}
 		else{
-			$img_list.stop(true,false).animate({left: -li_width + 'px'},500,function(){
+			$img_list.stop(true,false).animate({'left': -li_width + 'px'},500,function(){
 				$img_list.append($first_li).css({
 					'left': 0 + 'px'
 				})

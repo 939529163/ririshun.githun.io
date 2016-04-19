@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<meta charset="UTF-8">
+	<title>carousel</title>
+	<link rel="stylesheet" href="./lib/bootstrap/css/bootstrap.css">
+	<link rel="stylesheet" href="./css/index.css">
+</head>
+<body>
+	<!-- 头部开始 -->
+	<div class="header">
+		<!-- logo -->
+		<h1 class="logo">
+			<a href="#">
+				<img src="./img/logo.png" alt="日日顺">
+			</a>
+		</h1>
+		<!-- 导航链接 -->
+		<ul class="header-nav">
+			<li class="active"><a href="#">首页</a></li>
+			<li><a href="#">公司</a></li>
+			<li><a href="#">品牌</a></li>
+			<li><a href="#">下单</a></li>
+			<li><a href="#">加盟</a></li>
+		</ul>
+		<!-- 电话登陆 -->
+		<div class="login">
+			<div class="telephone">
+				<i class="glyphicon glyphicon-earphone"></i>
+				<b>400-855-7777</b>
+			</div>
+			<a href="#">商家登陆</a>
+			<span>|</span>
+			<a href="#">专线登陆</a>
+			<span>|</span>
+			<a href="#">师傅登陆</a>
+		</div>
+	</div>
+	<!-- 头部结束 -->
+	<!-- 轮播开始 -->
+	<div class="carousel">
+		<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+     		 <!-- 指示表 -->
+       		 <ol class="carousel-indicators">
+         		 <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+         		 <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+         		 <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+       		 </ol>
+        		<!-- 图片1 -->
+		        <div class="carousel-inner" role="listbox">
+			       	 <div class="item active">
+			            <div class="icon-carousel-5"></div>
+			            <div class="bg"><a href=""></a></div>
+			         </div>
+			         <!-- 图片2 -->
+			         <div class="item">
+			           <div class="icon-carousel-4"></div>
+			            <div class="carousel-caption"></div>
+			         </div>
+			         <!-- 图片3 -->
+			         <div class="item">
+			            <div class="icon-carousel-3"></div>
+			            <div class="carousel-caption"></div>
+			         </div>
+		        </div>
+		</div>
+		<!-- 左箭头 -->
+		<a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+		    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+		    <span class="sr-only">Previous</span>
+		</a>
+		<!-- 右箭头 -->
+		<a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+		    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+		    <span class="sr-only">Next</span>
+		</a>
+		<!-- 搜索开始 -->
+		<div class="search">
+			<form action="/" class="form-group">
+				<input type="search" class="form-control" placeholder="订单号查询">
+				<button type="submit" class="btn">GO&nbsp;查询</button>
+			</form>
+		</div>
+	</div>
+	<!-- 轮播结束 -->
+	<!-- 服务开始 -->
+	<div class="service">
+		<div class="row">
+			<div class="col-md-3"><i class="icon icon-brand"></i><h2>品牌增值</h2><span>优质服务提升产品美誉度</span></div>
+			<div class="col-md-3"><i class="icon icon-aging"></i><h2>时效保障</h2><span>按约送达，超时赔付</span></div>
+			<div class="col-md-3"><i class="icon icon-service"></i><h2>服务无忧</h2><span>服务流程完善，相应迅速</span></div>
+			<div class="col-md-3"><i class="icon icon-inter"></i><h2>网络覆盖</h2><span>全国覆盖2800多个县区</span></div>
+		</div>
+	</div>
+	<!-- 服务结束 -->
+	<div class="outside">
+		<h2>服务产品</h2>
+	<!-- 服务产品开始 -->
+		<div class="products">
+			<div class="row">
+				<div class="col-md-6">
+					<!-- 运输服务 -->
+					<div class="transportation">
+						<img src="./img/products_1.jpg" alt="物流运输服务">
+						<h3>物流运输服务</h3>
+						<span>从厂家到物流点的一站式长途，短驳物流运输服务</span>
+					</div>
+				</div>
+				<div class="col-md-6">
+					<div class="col-md-6 col-sm-6">
+						<!-- 供应链 -->
+						<div class="supply">
+							<h3>供应链一体化</h3>
+							<span>提供家具行业<br/>包括整体物流方案等一体化解决方案</span>
+						</div>
+					</div>
+					<div class="col-md-6 col-sm-6">
+						<!-- 售后服务 -->
+						<div class="after-sales">
+							<img src="./img/products_2.jpg" alt="售后维修服务">
+							<h3>售后维修服务</h3>
+							<span>&nbsp; &nbsp; &nbsp;提供各种维修服务并支持上门换货等售后服务</span>
+						</div>
+					</div>
+					<div class="col-md-6 col-sm-6">
+						<!-- 配送服务 -->
+						<div class="distribution">
+							<img src="./img/products_3.jpg" alt="配送安装服务">
+							<h3>配送安装服务</h3>
+							<span>提供全国各级室内外送货及安装服务</span>
+						</div>
+					</div>
+					<div class="col-md-6 col-sm-6">
+						<!-- 仓储服务 -->
+						<div class="warahouse">
+							<h3>仓储管理服务</h3>
+							<span>10大集配中心，100个专业DC库<br/>上千家服务商仓库</span>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6">
+					<div class="col-md-6 col-sm-6">
+						<!-- 供应链 -->
+						<div class="supply">
+							<h3>供应链一体化</h3>
+							<span>提供家居行业<br/>包括和整体物流方案等一体化解决方案</span>
+						</div>
+					</div>
+					<div class="col-md-6 col-sm-6">
+						<!-- 售后服务 -->
+						<div class="after-sales">
+							<img src="./img/products_2.jpg" alt="售后维修服务">
+							<h3>售后维修服务</h3>
+							<span>提供各种维修服务并支持上门退换货等售后服务</span>
+						</div>
+					</div>
+					<div class="col-md-6 col-sm-6">
+						<!-- 配送服务 -->
+						<div class="distribution">
+							<img src="./img/products_3.jpg" alt="配送安装服务">
+							<h3>配送安装服务</h3>
+							<span>提供全国各级室内外送货及安装服务</span>
+						</div>
+					</div>
+					<div class="col-md-6 col-sm-6">
+						<!-- 仓储服务 -->
+						<div class="warahouse">
+							<h3>仓储管理服务</h3>
+							<span>10大集配中心，100个专业DC库的上千家服务商仓库</span>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6">
+					<!-- 物流五包 -->
+					<div class="logistics">
+						<img src="./img/products_4.jpg" alt="家居电商物流五包服务">
+						<h3>家居电商物流"五包"服务</h3>
+						<span>依托佛山、成都、北京、苏州等十个城市专业的家居电商物流集配中心，提供从物流集配中心发往全国各区域的干线运输、支线配送、搬运上楼、专业安装、售后维修五项一体化服务解决方案。<br/>依托全国各地上百家自建网络、超过千万家加盟网络及特约服务商资源，提供覆盖全国的最后1KM送装同步服务解决方案。</span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- 服务产品结束 -->
+	<!-- 下单开始 -->
+	<div class="order">
+		<h2>日日顺，邀您立刻下单</h2>
+		<!-- 下单方式 -->
+		<div class="order_way">
+			<div class="row">
+				<!-- 商家下单 -->
+				<div class="col-md-6">
+					<i class="icon-order"></i>
+					<div class="background"></div>
+						<a href="#" class="btn"><span>商家下单</span></a>
+						<div class="phone">
+							<h3>商家下单</h3>
+							<i class="glyphicon glyphicon-earphone"></i>
+							<b>400-855-7777</b>
+						</div>
+				</div>
+				<!-- 个人下单 -->
+				<div class="col-md-6">
+					<i class="icon-order"></i>
+					<div class="background"></div>
+						<a href="#" class="btn"><span>个人下单</span></a>
+						<div class="phone">
+							<h3>个人下单</h3>
+							<i class="glyphicon glyphicon-earphone"></i>
+							<b>400-855-7777</b>
+						</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- 下单结束 -->
+	<!-- 新闻发布开始 -->
+	<div class="news-center">
+		<div ><h2>新闻中心</h2></div>
+		<div class="news">
+			<div class="col-md-4">
+				<!-- 新闻列表 -->
+				<!-- TODO: 修改标签 -->
+				<div class="list">
+					<!-- 新闻内容 -->
+					<div class="date"><span>17</span>/12 &nbsp;2015 &nbsp; <span>New</span></div>
+					<div class="content">日日顺家居服务荣膺全国工商联家居电商委员会</div>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="list">
+					<!-- 新闻内容 -->
+					<div class="date"><span>10</span>/02 &nbsp; 2015</div>
+					<div class="content">日日顺家居&新邦物流“家居五包”产品隆重发布</div>
+				</div>	
+			</div>
+			<div class="col-md-4">
+				<div class="list">
+					<!-- 新闻内容 -->
+					<div class="date"><span>10</span>/02 &nbsp; 2015</div>
+					<div class="content">日日顺家居服务荣膺全国工商联家居电商委员会</div>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="list">
+					<!-- 新闻内容 -->
+					<div class="date"><span>10</span>/02 &nbsp; 2015</div>
+					<div class="content"><p>日日顺家居服务荣膺全国工商联家居电商委员会</p></div>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="list">
+					<!-- 新闻内容 -->
+					<div class="date"><span>10</span>/02 &nbsp; 2015</div>
+					<div class="content"><p>日日顺家居服务荣膺全国工商联家居电商委员会</p></div>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="list">
+					<!-- 新闻内容 -->
+					<div class="date"><span>10</span>/02 &nbsp; 2015</div>
+					<div class="content">日日顺家居服务荣膺全国工商联家居电商委员会</div>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="list">
+					<!-- 新闻内容 -->
+					<div class="date"><span>10</span>/02 &nbsp; 2015</div>
+					<div class="content">日日顺家居服务荣膺全国工商联家居电商委员会</div>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="list">
+					<!-- 新闻内容 -->
+					<div class="date"><span>10</span>/02 &nbsp; 2015</div>
+					<div class="content">日日顺家居服务荣膺全国工商联家居电商委员会</div>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="list">
+					<!-- 新闻内容 -->
+					<div class="date"><span>10</span>/02 &nbsp; 2015</div>
+					<div class="content">日日顺家居服务荣膺全国工商联家居电商委员会</div>
+				</div>
+			</div>
+		</div>
+	</div>	
+	<!-- 新闻发布结束 -->
+	<!-- 合作伙伴 -->
+	<div class="partner">
+		<div class="title">
+			<h2>合作伙伴<a href="#">更多>></a></h2>
+		</div>
+		<div class=banner>
+			<!-- 图片列表 -->
+			<ul class="imgList" style="left:0px;">
+				<li class="li-item">
+					<!-- 多喜爱链接 -->
+					<a href="#">
+						<div class="first">
+							<img src="./img/aokok.png" alt="ttupian">
+						</div>
+						<span>多喜爱</span>
+					</a>
+				</li>
+				<li>
+					<!-- 箭牌卫浴链接 -->
+					<a href="#">
+						<div class="second">
+							<img src="./img/arrowsanitary.png" alt="tupian">
+						</div>
+						<span>箭牌卫浴</span>
+					</a>
+				</li>
+				<li>
+					<!-- 杜拉维特链接 -->
+					<a href="#">
+						<div class="third">
+							<img src="./img/duravit.png" alt="tu">
+						</div>
+						<span>杜拉维特</span>
+					</a>
+				</li>
+				<li>
+					<!-- 顾家家居链接 -->
+					<a href="#">
+						<div class="fourth">
+							<img src="./img/kuka.png" alt="tupian">
+						</div>
+						<span>顾家家居</span>
+					</a>
+				</li>
+				<li>
+					<!-- 喜临门链接 -->
+					<a href="#">
+						<div class="fifth">
+							<img src="./img/chinabed.png" alt="tupian">
+						</div>
+						<span>喜临门</span>
+					</a>
+				</li>
+				<li>
+					<!-- 左右沙发链接 -->
+					<a href="#">
+						<div class="last">
+							<img src="./img/zuoyou.png" alt="tupian">
+						</div>
+						<span>左右沙发</span>
+					</a>
+				</li>
+				<li>
+					<!-- 左右沙发链接 -->
+					<a href="#">
+						<div class="last">
+							<img src="./img/zuoyou.png" alt="tupian">
+						</div>
+						<span>左右沙发</span>
+					</a>
+				</li>
+				<li>
+					<!-- 左右沙发链接 -->
+					<a href="#">
+						<div class="last">
+							<img src="./img/zuoyou.png" alt="tupian">
+						</div>
+						<span>左右沙发</span>
+					</a>
+				</li>
+			</ul>
+			<!-- 箭头 -->
+			<a href="" class="prev">&lt;</a>
+			<a href="" class="next">&gt;</a>
+		</div>
+	</div>
+	<!-- 合作伙伴结束 -->
+	<!-- 底部开始 -->
+	<!-- TODO：修改标签 删除间隔符 修改css样式 -->
+	<div class="bottom">
+		<div class="domain">
+			<!-- 日日顺介绍 -->
+			<div class="item">
+				<div class="domain-item first">
+					<a href="#">关于日日顺 </a>
+				</div>
+				<!-- 天猫店 -->
+				<div class="domain-item">
+					<a href="#"> 天猫店铺 </a>
+				</div>
+				<!-- 联系方式 -->
+				<div class="domain-item last">
+					<a href="#"> 联系我们</a>
+				</div>
+			</div>
+			<p>Copyright © 2015 WWW.GOODAY365.COM <a href="#" class="record">鲁ICP备09096283</a> 海尔集团 版权所有</p>
+			<!-- 二维码 -->
+			<div class="qr">
+				<div><span>扫二维码关注微信</span></div>
+				<!-- 二维码图片 -->
+				<div><i class="icon-qr"></i></div>
+			</div>
+		</div>
+	</div>
+	<!-- 底部结束 -->
+</body>
+<script src="./lib/jquery.js"></script>
+<script src="./lib/bootstrap/js/bootstrap.js"></script>
+<script src="./js/index.js"></script>
+</html>
